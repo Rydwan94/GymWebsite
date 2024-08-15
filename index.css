@@ -251,6 +251,7 @@ margin: 100px 0;
 
 .seventhContainer {
     padding: 40px 0; 
+    margin-bottom: 100px;
 }
 
 .seventhContainer .galleryContainer {
@@ -293,6 +294,12 @@ footer ul {
 
 footer a {
     color: #a7a4a4;
+    transition: .5s;
+}
+
+footer a:hover {
+    color: red;
+    text-decoration: none;
 }
 
 
