@@ -19,8 +19,7 @@ html {
 
 body {
     font-family: 'Montserrat', sans-serif;
-    width: 100vw;
-    min-width: 100vw;
+   width: 100%;
     overflow-x: hidden;
 }
 
@@ -62,6 +61,11 @@ header {
     top: 0;
     z-index: 10;
     width: 100%;
+}
+
+nav {
+    position: sticky;
+    top: 0;
 }
 
 .navBtn {
@@ -377,11 +381,17 @@ footer a:hover {
         flex: 0 0 auto; /* Zapobiega kurczeniu się elementów i umożliwia przewijanie */
     }
     .galleryContainer img {
-        
         width: 200px;
-       
-        
     }
+
+    .footerBrand {
+        margin-bottom: 20px;
+    }
+
+    .footerNavSection {
+        margin-bottom: 20px;
+    }
+    
   }
 
 
