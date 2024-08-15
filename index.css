@@ -1,0 +1,428 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --pargrafColor:#a7a4a4;
+}
+
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    width: 100vw;
+    min-width: 100vw;
+    overflow-x: hidden;
+}
+
+
+h1 {
+    font-size: 2.5rem; 
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 2rem; 
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 1.75rem; 
+    font-weight: 700;
+}
+
+h4 {
+    font-size: 1.50rem;
+    font-weight: 700;
+}
+
+p {
+    font-size: 1rem; 
+    font-weight: 400;
+    color: var(--pargrafColor)
+}
+
+
+
+
+/* header */
+
+
+header {
+    position: absolute;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+}
+
+.navBtn {
+    padding: 5px 10px;
+    border-radius: 10px;
+    background-color: #000000;
+    border: none;
+    color: #ffff;
+    transition: .6s;
+    outline: none;
+}
+
+.navBtn:hover {
+    color: #000000;
+    background-color: #ffff;
+}
+
+/* main */
+
+
+
+.bannerContent {
+    padding-top: 200px;
+    padding-left: 50px;
+    padding-bottom: 50px;
+}
+
+.bannerContent h1, .bannerContent p {
+    max-width: 70%;
+    margin-bottom: 40px;
+}
+
+.bannerContent button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: #000000;
+    border: none;
+    color: #ffff;
+    transition: .6s;
+    outline: none;
+}
+
+.bannerContent button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 10px 1px black;
+}
+
+.bannerPictureContainer {
+    padding-top: 100px;
+}
+
+
+.socialIcons a {
+    color: #333;
+    font-size: 1.6rem;
+    transition: color 0.3s;
+}
+
+
+.bannerPictureContainer {
+    display: flex;
+    background-color: #232323;
+}
+
+.bannerPictureContainer img {
+    margin-left: -250px;
+    max-width: 100%;
+}
+
+.secondBannerContainer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    width: 100%;
+    padding: 30px 0;
+    background-color: #000000;
+    color: #ffff;
+}
+
+.thirdContainer {
+    margin: 150px 0;
+}
+
+.fourthContainer {
+margin: 100px 0;
+}
+.fourthContainerContent i {
+   font-size: 1.6rem
+}
+
+.fourthImageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fourthContainerImage img {
+    width: 100%;
+    max-width: 100%;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 1px black;
+}
+
+.fourthContainerImage .lastImage {
+    height: 500px;
+}
+
+
+.fifthContainer p {
+    margin-block: 20px;
+}
+
+.fifthContainer p span {
+    font-weight: bold;
+}
+
+.fifthContainer img {
+    border-radius: 50px;
+    max-width: 100%;
+}
+
+.fifthContainerImage {
+    position: relative;
+    max-width: fit-content;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.fifthContainerImage .backdrop {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background-color: rgba(110, 110, 110, 0.5);
+    backdrop-filter: blur(10px); 
+    transition: height 0.6s ease-in-out;
+    z-index: 1;
+    border-radius: 50px;
+    overflow: hidden;
+    padding: 10px 20px;
+}
+
+
+.fifthContainerImage:hover .backdrop {
+    height: 100%;
+}
+
+.backdrop span i {
+    font-size: 50px;
+    color: #ffff;
+    margin-bottom: 50px;
+}
+
+.sixthContainer {
+    margin-block: 100px;
+}
+
+.sixthContainer .bannerImage {
+    width: 100%;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.contentWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    
+}
+
+.contentWrapper h2, .contentWrapper p {
+    color: white;
+    text-shadow: 0 2px 5px black
+}
+
+.contentWrapper a {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.seventhContainer {
+    padding: 40px 0; 
+}
+
+.seventhContainer .galleryContainer {
+    display: flex;
+    
+    gap: 20px;
+  
+    margin: 0 auto;
+}
+
+.galleryContainer a {
+    display: block;
+    overflow: hidden; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; 
+}
+
+.galleryContainer a:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+}
+
+.galleryContainer img {
+    max-width: 100%;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    
+}
+
+footer {
+    background-color: #faf7f7;
+    padding: 20px 0;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer a {
+    color: #a7a4a4;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+
+    header {
+        position: sticky;
+        top: 0;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius:0 0 16px 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+
+    .navBtn {
+        display: none;
+    }
+
+    /* main*/
+
+    .bannerContent {
+        padding: 50px 15px 100px 15px;
+        text-align: center;
+    }
+
+    .bannerContent h1, .bannerContent p {
+        max-width: 100%;
+        text-wrap: balance;
+    }
+
+    .bannerPictureContainer  {
+        padding-top: 0;
+        background-color: transparent;
+    }
+
+    .bannerPictureContainer img {
+        margin: 0 auto;
+    }
+
+    .secondBannerContainer {
+        padding: 40px;
+        scroll-snap-type: mandatory;
+        overflow-x: scroll;
+    }
+
+    .secondBannerContent {
+        min-width: 200px;
+    }
+
+    .fourthContent {
+        text-align: center;
+        margin-block: 20px;
+    }
+
+    .sixthContainer .bannerImage {
+        background-position: center;
+    }
+
+    .contentWrapper {
+        padding: 0 10px;
+    }
+
+    .seventhContainer .galleryContainer {
+        display: flex; /* Ustawienie kontenera jako flexbox */
+        overflow-x: auto; /* Użyj `auto` zamiast `scroll` */
+        scroll-snap-type: x mandatory; /* Ustawienie osi na `x` (poziomą) */
+        scroll-padding: 10px; /* Opcjonalne: dodaje trochę odstępu na początku i końcu */
+    }
+
+    .galleryContainer a {
+        scroll-snap-align: start; /* Dopasowanie do początku kontenera */
+        flex: 0 0 auto; /* Zapobiega kurczeniu się elementów i umożliwia przewijanie */
+    }
+    .galleryContainer img {
+        
+        width: 200px;
+       
+        
+    }
+  }
+
+
+  @media (min-width: 768px) and (max-width: 1024px)  {
+
+    header {
+        position: sticky;
+        top: 0;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius:0 0 16px 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+
+    .navBtn {
+        display: none;
+    }
+
+    /* main*/
+
+    .bannerContent {
+        padding: 50px 15px 100px 15px;
+        text-align: center;
+    }
+
+    .bannerContent h1, .bannerContent p {
+        max-width: 100%;
+        text-wrap: balance;
+    }
+
+    .bannerPictureContainer  {
+        padding-top: 0;
+        background-color: transparent;
+    }
+
+    .bannerPictureContainer img {
+        margin: 0 auto;
+    }
+
+    .secondBannerContainer {
+        scroll-snap-type: mandatory;
+        overflow-x: scroll;
+    }
+
+    .fourthContent {
+        text-align: center;
+        margin-block: 20px;
+    }
+  }
