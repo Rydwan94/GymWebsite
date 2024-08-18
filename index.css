@@ -44,6 +44,11 @@ h4 {
     font-weight: 700;
 }
 
+h5 {
+    text-align: black;
+    font-size: 50px;
+}
+
 p {
     font-size: 1rem; 
     font-weight: 400;
@@ -57,15 +62,14 @@ p {
 
 
 header {
-    position: absolute;
-    top: 0;
-    z-index: 10;
     width: 100%;
 }
 
 nav {
-    position: sticky;
-    top: 0;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius:0 0 16px 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    
 }
 
 .navBtn {
@@ -83,10 +87,33 @@ nav {
     background-color: #ffff;
 }
 
+.navbar-brand img {
+   max-width: 100%;
+}
+
 /* main */
 
+.mobileSlider img {
+    aspect-ratio: 16/7;
+    object-fit: cover;
+   
+}
 
+.mobileSlider .joinButton {
+    font-size: 30px;
+    color: #000000;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: #ffff;
+    padding: 10px;
+   text-decoration: none;
+    border-radius: 10px;
+    transition: .7s;
+}
 
+.mobileSlider .joinButton:hover {
+   font-size: 35px;
+}
 .bannerContent {
     padding-top: 200px;
     padding-left: 50px;
@@ -311,7 +338,7 @@ footer a:hover {
 @media only screen and (max-width: 768px) {
 
     header {
-        position: sticky;
+        position: fixed;
         top: 0;
         background: rgba(255, 255, 255, 0.2);
         border-radius:0 0 16px 16px;
@@ -319,6 +346,11 @@ footer a:hover {
         backdrop-filter: blur(5px);
         -webkit-backdrop-filter: blur(5px);
         border: 1px solid rgba(255, 255, 255, 0.3);
+        z-index: 10;
+    }
+
+    nav a {
+        font-weight: bold;
     }
 
     .navBtn {
@@ -327,8 +359,12 @@ footer a:hover {
 
     /* main*/
 
+    .mobileSlider {
+       margin-top: 100px;
+    }
+
     .bannerContent {
-        padding: 50px 15px 100px 15px;
+        padding: 50px 15px 50px 15px;
         text-align: center;
     }
 
