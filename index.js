@@ -200,15 +200,28 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
+    gsap.from(".card", {
+        duration: 1,
+        y: 100,   
+        opacity: 0,
+        stagger: 0.2,  
+        ease: "power4.out",
+        scrollTrigger: {
+            trigger: ".seventhContainer",
+            start: "top 80%", 
+            toggleActions: "play none none reverse"
+        }
+    });
+
     gsap.from(".galleryContainer a", {
         opacity: 0,
         y: 30,
-        stagger: 0.2, // Opóźnienie między animacjami kolejnych obrazków
+        stagger: 0.2, 
         duration: 1,
         ease: "power3.out",
         scrollTrigger: {
             trigger: ".galleryContainer",
-            start: "top 80%", // Animacja rozpocznie się, gdy galeria będzie w 80% widoczna
+            start: "top 80%", 
             toggleActions: "play none none reverse"
         }
     });

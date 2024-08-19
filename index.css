@@ -197,7 +197,7 @@ margin: 100px 0;
     height: 240px;
     object-fit: cover;
     border-radius: 10px;
-    box-shadow: 0 0 10px 1px black;
+    box-shadow: 0 0 5px 0px black;
 }
 
 .fourthContainerImage .lastImage {
@@ -257,6 +257,7 @@ margin: 100px 0;
 .sixthContainer .bannerImage {
     width: 100%;
     height: 500px;
+    background-image: url(./img/bannerBackground.svg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -281,11 +282,92 @@ margin: 100px 0;
 }
 
 .seventhContainer {
+    margin: 150px 0;
+}
+
+.seventhContainer h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #343a40; /* Ciemnoszary kolor */
+}
+
+.seventhContainer p {
+    font-size: 1.1rem;
+    color: #6c757d; /* Stonowany szary */
+}
+
+.card {
+    border-radius: 15px; /* Zaokrąglone krawędzie */
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px); /* Delikatne podniesienie karty przy najechaniu */
+}
+
+.cardTitle {
+    font-size: 1.5rem;
+    color: var(--pargrafColor);
+    margin-bottom: 1rem;
+}
+
+.cardPrice {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #343a40;
+}
+
+.card ul {
+    list-style: none;
+}
+
+.cardPrice .period {
+    font-size: 1rem;
+    color: #6c757d;
+}
+
+.btnPrimary {
+    background-color: #eeeeee;
+    border: none;
+    
+    padding: 10px 20px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.btnPrimary:hover {
+    background-color: #dbdbdb;
+    
+    font-weight: bold;
+}
+
+.listUnstyled {
+    font-size: 1rem;
+    color: #6c757d;
+}
+
+.shadowSm {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Delikatny cień */
+}
+
+.textCenter {
+    text-align: center;
+}
+
+.textMuted {
+    color: #6c757d;
+}
+
+.btnBlock {
+    width: 100%;
+}
+
+.eigthContainer {
     padding: 40px 0; 
     margin-bottom: 100px;
 }
 
-.seventhContainer .galleryContainer {
+.eigthContainer .galleryContainer {
     display: flex;
     
     gap: 20px;
@@ -394,6 +476,12 @@ footer a:hover {
         min-width: 200px;
     }
 
+
+    .fourthContainerImage .lastImage {
+        height: 240px;
+        margin-top: 15px;
+    }
+
     .fourthContent {
         text-align: center;
         margin-block: 20px;
@@ -407,7 +495,7 @@ footer a:hover {
         padding: 0 10px;
     }
 
-    .seventhContainer .galleryContainer {
+    .eigthContainer .galleryContainer {
         display: flex; /* Ustawienie kontenera jako flexbox */
         overflow-x: auto; /* Użyj `auto` zamiast `scroll` */
         scroll-snap-type: x mandatory; /* Ustawienie osi na `x` (poziomą) */
@@ -421,6 +509,9 @@ footer a:hover {
     .galleryContainer img {
         width: 200px;
     }
+
+
+    /* footer */
 
     .footerBrand {
         margin-bottom: 20px;
