@@ -218,9 +218,19 @@ margin: 100px 0;
     height: 500px;
 }
 
+.fifthContainer h3 {
+    color: #ff5733;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
 
 .fifthContainer p {
     margin-block: 20px;
+    color: #ffff;
+    font-weight: bold;
+    text-align: justify;
+    text-shadow: 0 0 4px black;
 }
 
 .fifthContainer p span {
@@ -290,10 +300,32 @@ margin: 100px 0;
     text-shadow: 0 2px 5px black
 }
 
-.contentWrapper a {
-    text-decoration: underline;
+.downloadButton {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 16px;
     font-weight: bold;
+    color: #fff;
+    background-color: #ff5733; 
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
+
+.downloadButton:hover {
+    background-color: #ff2e00; 
+    transform: scale(1.05); 
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); 
+    color: #fff;
+}
+
+.downloadButton:active {
+    transform: scale(0.98); 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); 
+}
+
 
 .seventhContainer {
     margin: 150px 0;
@@ -423,6 +455,10 @@ footer ul {
     list-style: none;
 }
 
+footer ul li {
+    margin-bottom: 5px;
+}
+
 footer a {
     color: #a7a4a4;
     transition: .5s;
@@ -431,6 +467,11 @@ footer a {
 footer a:hover {
     color: red;
     text-decoration: none;
+}
+
+.footerSocialIcon {
+    font-size: 20px;
+    
 }
 
 
