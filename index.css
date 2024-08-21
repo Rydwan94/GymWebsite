@@ -328,7 +328,15 @@ margin: 100px 0;
     color: #343a40;
 }
 
-.card ul {
+.customCardBody {
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+   
+}
+
+.cardBody ul {
     list-style: none;
 }
 
