@@ -66,13 +66,13 @@ header {
     width: 100%;
 }
 
-.active {
+.activeLink {
     background-color: #000000;
     border-radius: 10px;
     transition: .5s;
 }
 
-.active a {
+.activeLink a {
     color: white!important;
     font-weight: 600;
 }
@@ -105,28 +105,16 @@ nav {
    max-width: 100%;
 }
 
+.mobileSlider {
+    overflow: hidden;
+}
 
 .mobileSlider img {
 
     object-fit: contain;
-   
-}
+} 
 
-.mobileSlider .joinButton {
-    font-size: 30px;
-    color: #000000;
-    font-weight: bold;
-    text-transform: uppercase;
-    background-color: #ffff;
-    padding: 10px;
-   text-decoration: none;
-    border-radius: 10px;
-    transition: .7s;
-}
 
-.mobileSlider .joinButton:hover {
-   font-size: 35px;
-}
 .bannerContent {
     padding-top: 200px;
     padding-left: 50px;
@@ -572,7 +560,7 @@ footer a:hover {
         z-index: 10;
     }
 
-    .active {
+    .activeLink {
         padding-left: 10px;
     }
 

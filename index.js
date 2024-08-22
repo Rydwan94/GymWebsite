@@ -4,10 +4,10 @@ const navLinks = document.querySelectorAll(".nav-item")
 navLinks.forEach(navLink => {
     navLink.addEventListener('click', () => {
       
-        navLinks.forEach(item => item.classList.remove('active'));
+        navLinks.forEach(item => item.classList.remove('activeLink'));
 
       
-        navLink.classList.add('active');
+        navLink.classList.add('activeLink');
     });
 });
 
