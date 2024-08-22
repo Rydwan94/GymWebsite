@@ -105,11 +105,10 @@ nav {
    max-width: 100%;
 }
 
-/* main */
 
 .mobileSlider img {
-    aspect-ratio: 16/7;
-    object-fit: cover;
+
+    object-fit: contain;
    
 }
 
@@ -332,7 +331,7 @@ margin: 100px 0;
 .backdrop span i {
     font-size: 50px;
     color: #ffff;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 
 .sixthContainer {
