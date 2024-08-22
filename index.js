@@ -35,17 +35,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
 
-    gsap.from(".mobileSlider", { 
-        duration: 1.2, 
-        opacity: 0, 
-        y: 100, 
-        x: -50, 
-        scale: 1.2, 
-        filter: "blur(10px)",
-        ease: "power4.out", 
-        stagger: 0.4,
-        clearProps: "all"
-    });
 
     // Animacja dla nagłówka
     gsap.from(".bannerContent h1", {
