@@ -33,21 +33,24 @@
             </button>
             <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
                 <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#join">Dołącz <span class="sr-only">(current)</span></a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#joinSection">Dołącz <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Dlaczego my</a>
+                        <a class="nav-link" href="#forYoung">Program dla młodych</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">O nas</a>
+                        <a class="nav-link" href="#trainer">Nasz trener</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Kontakt</a>
+                        <a class="nav-link" href="#priceList">Cennik</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Kontakt</a>
                     </li>
                 </ul>
             </div>
-            <button class="navBtn">Dołącz do nas</button>
+            <a href="#join" class="navBtn">Dołącz do nas</a>
         </nav>
     </header>
 
@@ -65,7 +68,6 @@
                     <div class="carousel-item active">
                         <img src="./img/mobileSlider1.svg" class="d-block w-100" alt="...">
                         <div class="carousel-caption d-none d-md-block">
-                            <!-- <a class="joinButton" href="">Zapisz</a> -->
                         </div>
                     </div>
                     <div class="carousel-item">
@@ -84,10 +86,10 @@
             </div>
         </section>
 
-        <section class="mainBanner container-fluid px-0 animation">
+        <section id="joinSection" class="mainBanner container-fluid px-0 animation">
             <div class="row mx-0">
                 <div class="col-lg-8 col-md-12 col-sm-12 bannerContent">
-                    <h1>Zacznij wraz ze </br> Startem Strzegom</h1>
+                    <h1>Dołącz do klubu </br> Start Strzegom</h1>
 
                     <p>
                         Dołącz do Startu Strzegom i odkryj nową pasję! Nasz klub oferuje profesjonalne treningi,
@@ -96,7 +98,7 @@
                         pomogą Ci stać się lepszą wersją siebie. Zapisz się i zacznij swoją sportową przygodę już dziś!
                     </p>
 
-                    <button>Zacznij</button>
+                    <a href="#join" class="joinButton">Zacznij</a href="#join">
                     <div class="socialIcons mt-3">
                         <a href="#" class="mr-2"><i class="fab fa-facebook-f"></i></a>
                         <a href="#" class="mr-2"><i class="fab fa-instagram"></i></a>
@@ -132,52 +134,58 @@
 
         </section>
 
-        <section class="thirdContainer">
-            <div class="container-fluid px-lg-5 px-md-5 px-sm-0">
+        <section id="forYoung" class="thirdContainer">
+            <div class="container-fluid px-lg-5 px-md-5 px-sm-5">
                 <div class="row">
                     <div class="col-lg-6 col-md-6 col-sm-12 text-center thirdContainerImage">
                         <img src="./img/thirdContainerImg.svg" alt="">
                     </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12 text-center my-auto">
+                    <div class="col-lg-6 col-md-6 col-sm-12 text-center  thirdContainerContent">
                         <h2 class="mb-4">Program dla Młodych</h2>
                         <p>Naszym celem jest wspieranie rozwoju fizycznego młodych ludzi poprzez nowoczesne zaplecze
                             treningowe i indywidualne podejście. Dzięki dofinansowaniu oferujemy młodzieży dostęp do
                             wysokiej jakości sprzętu oraz profesjonalnych treningów. Nasze programy pomagają rozwijać
                             umiejętności sportowe, ucząc wartości takich jak dyscyplina i współpraca. Dołącz do nas i
                             rozwijaj swoje sportowe pasje w naszym klubie!</p>
+                        <span>Po wypełnieniu formularza wyślij
+                            go na adres: mydwan@gmail.com</span>
+                        <a href="#join">Dołącz do programu</a>
                     </div>
                 </div>
             </div>
         </section>
 
         <section class="fourthContainer">
-            <div class="container-fluid px-lg-5 px-md-5 px-sm-0">
+            <div class="container-fluid px-lg-5 px-md-5 px-sm-5">
                 <div class="row">
                     <div class="col-lg-6 col-md-12 col-sm-12 my-auto fourthContainerContent">
                         <div class="row">
-                            <div class="col-lg-6 col-md-12 col-sm-12 fourthContent ">
-                                <h4><i class="fas fa-dumbbell fa-2x"></i> <span>Trening siłowy</span></h4>
-                                <p>Trening siłowy to fundament każdej rutyny fitness. Skupia się na zwiększeniu masy
-                                    mięśniowej i siły poprzez ćwiczenia z ciężarami. Jest to idealne dla tych, którzy
-                                    chcą poprawić swoją wydolność i budować silną sylwetkę.</p>
+                            <div class="col-lg-6 col-md-12 col-sm-12 fourthContent">
+                                <h4><i class="fas fa-weight-hanging fa-2x"></i> <span>Wyciskanie na ławce</span></h4>
+                                <p>Wyciskanie na ławce to kluczowa dyscyplina siłowa, która koncentruje się na
+                                    rozwijaniu siły górnych partii ciała, zwłaszcza mięśni klatki piersiowej, tricepsów
+                                    i barków. Regularny trening w tej dyscyplinie pomaga w budowaniu imponującej siły
+                                    oraz masy mięśniowej.</p>
                             </div>
-                            <div class="col-lg-6 col-md-12 col-sm-12 fourthContent ">
-                                <h4><i class="fas fa-running fa-2x"></i> <span>Bieganie</span></h4>
-                                <p>Bieganie to doskonały sposób na poprawę kondycji i wytrzymałości. Regularne biegi
-                                    pomagają w spalaniu kalorii, poprawie zdrowia serca i zwiększeniu poziomu energii,
-                                    co jest ważne dla każdego sportowca.</p>
+                            <div class="col-lg-6 col-md-12 col-sm-12 fourthContent">
+                                <h4><i class="fas fa-dumbbell fa-2x"></i> <span>Trening ogólnorozwojowy</span></h4>
+                                <p>Trening ogólnorozwojowy skupia się na wszechstronnym rozwijaniu wszystkich grup
+                                    mięśniowych oraz poprawie kondycji fizycznej. To zróżnicowany program ćwiczeń, który
+                                    obejmuje elementy siłowe, wytrzymałościowe i koordynacyjne, stanowiący fundament
+                                    każdej aktywności sportowej.</p>
                             </div>
-                            <div class="col-lg-6 col-md-12 col-sm-12 fourthContent ">
-                                <h4><i class="fas fa-bicycle fa-2x"></i> <span>Jazda na rowerze</span></h4>
-                                <p>Jazda na rowerze to świetne ćwiczenie cardio, które wzmacnia dolne partie ciała. Jest
-                                    to również doskonały sposób na poprawę wytrzymałości i kondycji, jednocześnie
-                                    ciesząc się aktywnością na świeżym powietrzu.</p>
+                            <div class="col-lg-6 col-md-12 col-sm-12 fourthContent">
+                                <h4><i class="fas fa-user-friends fa-2x"></i> <span>Kulturystyka</span></h4>
+                                <p>Kulturystyka to dyscyplina skoncentrowana na maksymalnym rozwinięciu muskulatury i
+                                    estetyki ciała poprzez intensywny trening siłowy oraz precyzyjną kontrolę diety.
+                                    Celem jest uzyskanie harmonijnej, proporcjonalnej sylwetki z dobrze zdefiniowanymi
+                                    mięśniami.</p>
                             </div>
-                            <div class="col-lg-6 col-md-12 col-sm-12 fourthContent ">
-                                <h4><i class="fas fa-swimmer fa-2x"></i> <span>Pływanie</span></h4>
-                                <p>Pływanie angażuje wszystkie główne grupy mięśniowe i jest idealnym ćwiczeniem zarówno
-                                    dla siły, jak i wytrzymałości. To doskonały sposób na poprawę ogólnej kondycji
-                                    fizycznej bez obciążania stawów.</p>
+                            <div class="col-lg-6 col-md-12 col-sm-12 fourthContent">
+                                <h4><i class="fas fa-heartbeat fa-2x"></i> <span>Siła i wytrzymałość</span></h4>
+                                <p>Siła i wytrzymałość to kluczowe elementy każdego programu treningowego. Skupiają się
+                                    na rozwijaniu zdolności do wykonywania intensywnych ćwiczeń przez dłuższy czas, co
+                                    jest niezbędne zarówno w sportach siłowych, jak i wytrzymałościowych.</p>
                             </div>
                         </div>
                     </div>
@@ -196,7 +204,7 @@
             </div>
         </section>
 
-        <section class="fifthContainer">
+        <section id="trainer" class="fifthContainer">
             <div class="container">
                 <div class="row">
                     <div class="col-12 text-center ">
@@ -206,11 +214,13 @@
                             <img src="./img/trainerPicture.svg" alt="trainerPicture">
                             <div class="backdrop">
                                 <span><i class="fa fa-arrow-up" aria-hidden="true"></i></span>
-                                <p>trener sportów siłowych, to wybitny fachowiec i przykład siły charakteru. Diagnoza
-                                    stwardnienia rozsianego stała się dla niego źródłem determinacji i odporności.
-                                    Dzięki
-                                    własnym doświadczeniom potrafi skutecznie wspierać podopiecznych, inspirując ich do
-                                    pokonywania przeciwności.</p>
+                                <p>Trener sportów siłowych to wybitny fachowiec z licznymi osiągnięciami w trójboju
+                                    siłowym oraz pełnymi uprawnieniami trenerskimi w judo. Pomimo wyzwania, jakim jest
+                                    stwardnienie rozsiane, przekształcił swoje trudności w determinację, co pozwala mu
+                                    skutecznie motywować i wspierać swoich podopiecznych. Jego doświadczenie i pasja
+                                    inspirują innych do pokonywania przeszkód i osiągania sukcesów.</p>
+
+
                             </div>
                         </div>
                     </div>
@@ -235,7 +245,7 @@
             </div>
         </section>
 
-        <section class="seventhContainer">
+        <section id="priceList" class="seventhContainer">
             <div class="container">
                 <h2 class="textCenter mb-5">Cennik</h2>
 
@@ -309,33 +319,50 @@
         </section>
 
 
-        <!-- <section class="eighthContainer">
+        <section class="eighthContainer">
             <div class="container my-5">
-                <h2 class="text-center mb-4">Harmonogram Treningów</h2>
-                <table class="table table-striped table-bordered table-hover">
-                    <thead class="thead-dark">
-                        <tr>
-                            <th scope="col">Godzina</th>
-                            <th scope="col">Poniedziałek</th>
-                            <th scope="col">Wtorek</th>
-                            <th scope="col">Środa</th>
-                            <th scope="col">Czwartek</th>
-                            <th scope="col">Piątek</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row">18:00 - 20:00</th>
-                            <td>Siłownia</td>
-                            <td>Joga</td>
-                            <td>Crossfit</td>
-                            <td>Zumba</td>
-                            <td>Pilates</td>
-                        </tr>
-                    </tbody>
-                </table>
+                <h2 class="text-center mb-5">Harmonogram Treningów</h2>
+                <div class="row justify-content-center">
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <div class="card-header bg-dark text-white text-center">
+                                Poniedziałek
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title">18:00 - 20:00</h5>
+                                <p class="card-text">Trening z <span class="font-weight-bold">Markiem Rydwańskim</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <div class="card-header bg-dark text-white text-center">
+                                Wtorek
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title">18:00 - 20:00</h5>
+                                <p class="card-text">Trening z <span class="font-weight-bold">Markiem Rydwańskim</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <div class="card-header bg-dark text-white text-center">
+                                Czwartek
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title">18:00 - 20:00</h5>
+                                <p class="card-text">Trening z <span class="font-weight-bold">Markiem Rydwańskim</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </section> -->
+        </section>
+
 
         <section class="ninethContainer">
             <h2 class="mb-5 text-center">Zobacz Kilka zdjęć z naszej aktywności!</h2>
@@ -358,15 +385,53 @@
                 <a href="./img/gallery6.jpg">
                     <img src="./img/gallery6.jpg" />
                 </a>
+                <a href="./img/gallery7.jpg">
+                    <img src="./img/gallery7.jpg" />
+                </a>
+                <a href="./img/gallery8.jpg">
+                    <img src="./img/gallery8.jpg" />
+                </a>
+                <a href="./img/gallery9.jpg">
+                    <img src="./img/gallery9.jpg" />
+                </a>
+                <a href="./img/gallery10.jpg">
+                    <img src="./img/gallery10.jpg" />
+                </a>
 
             </div>
         </section>
 
 
+        <section class="mapSection">
+            <div class="container">
+                <h2 class="textCenter mb-4">Lokalizacja Treningów</h2>
+                <div class="row justifyContentCenter">
+                    <div class="col-md-12">
+                        
+                        <div class="mapContainer">
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2436.0353838266606!2d15.846152816051738!3d50.92630943120435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4705f0d0dbb1a6b7%3A0x22db565fc629e51d!2sAdama%20Mickiewicza%202%2C%2058-150%20Strzegom!5e0!3m2!1spl!2spl!4v1694828495681!5m2!1spl!2spl" 
+                                width="100%" 
+                                height="450" 
+                                style="border:0;" 
+                                allowfullscreen="" 
+                                loading="lazy">
+                            </iframe>
+                        </div>
+                        
+                        <!-- <div class="textCenter mt-3">
+                            <p><strong>Adres:</strong> Adama Mickiewicza 2, 58-150 Strzegom</p>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
     </main>
 
     <!-- Footer -->
-    <footer class="text-center mt-5">
+    <footer class="text-center">
         <div class="container-fluid">
             <div class="row">
                 <!-- Logo -->
@@ -388,13 +453,13 @@
                             <a href="#">O nas</a>
                         </li>
                         <li>
-                            <a href="#">Kontakt</a>
+                            <a href="#contact">Kontakt</a>
                         </li>
                     </ul>
                 </div>
 
                 <!-- Kontakt -->
-                <div class="col-lg-3 col-md-3 col-sm-12">
+                <div id="contact" class="col-lg-3 col-md-3 col-sm-12">
                     <h4>Kontakt</h4>
                     <p><i class="fas fa-envelope"></i> Email: <a href="mailto:mydwan@go2.pl">mydwan@go2.pl</a></p>
                     <p><i class="fas fa-user"></i> 600 93 11 44 – Skarbnik klubu</p>

@@ -1,3 +1,17 @@
+const navLinks = document.querySelectorAll(".nav-item")
+
+
+navLinks.forEach(navLink => {
+    navLink.addEventListener('click', () => {
+      
+        navLinks.forEach(item => item.classList.remove('active'));
+
+      
+        navLink.classList.add('active');
+    });
+});
+
+
 const colours = ['#6a7583', '#1e304b', '#315460', '#080607'];
 const galleryEventsDemo = document.getElementById('custom-events-demo');
 galleryEventsDemo.addEventListener('lgBeforeSlide', (event) => {
@@ -21,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
 
-    gsap.from(".carousel-item", { 
+    gsap.from(".mobileSlider", { 
         duration: 1.2, 
         opacity: 0, 
         y: 100, 
@@ -111,20 +125,19 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    gsap.from(".fourthContainer", {
+    gsap.from(".thirdContainerImage", {
         duration: 1,
         x: -100,
         opacity: 0,
         ease: "power3.out",
         scrollTrigger: {
-            trigger: ".fourthContainer",
+            trigger: ".thirdContainer",
             start: "top 80%",
             toggleActions: "play none none reverse"
         }
     });
 
-   
-    gsap.from(".thirdContainer", {
+    gsap.from(".thirdContainerContent", {
         duration: 1,
         x: 100,
         opacity: 0,
@@ -136,9 +149,37 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
+    gsap.from(".fourthContent", {
+        scrollTrigger: {
+            trigger: ".fourthContainer", 
+            start: "top 80%", 
+            end: "bottom 20%", 
+            toggleActions: "play none none reverse", 
+        },
+        opacity: 0, 
+        y: 50, 
+        duration: 1.5, 
+        stagger: 0.3, 
+        ease: "power3.out" 
+    });
+    
+    gsap.from(".fourthContainerImage img", {
+        scrollTrigger: {
+            trigger: ".fourthContainer img",
+            start: "top 80%",
+            end: "bottom 20%",
+            toggleActions: "play none none reverse",
+        },
+        opacity: 0,
+        scale: 0.8,
+        duration: 1.5,
+        stagger: 0.3,
+        ease: "back.out(1.7)" 
+    });
+
     gsap.from(".fifthContainer", {
         duration: 1,
-        x: 100,
+        y: 100,
         opacity: 0,
         ease: "power3.out",
         scrollTrigger: {
@@ -225,4 +266,19 @@ document.addEventListener('DOMContentLoaded', function() {
             toggleActions: "play none none reverse"
         }
     });
+
+    gsap.from(".mapSection", {
+        opacity: 0,
+        y: 30,
+        stagger: 0.2, 
+        duration: 1,
+        ease: "power3.out",
+        scrollTrigger: {
+            trigger: ".mapSection",
+            start: "top 80%", 
+            toggleActions: "play none none reverse"
+        }
+    });
+
+   
 });
