@@ -300,6 +300,7 @@ margin: 100px 0;
     max-width: fit-content;
     height: 500px;
     overflow: hidden;
+    margin: 0 auto;
 }
 
 .fifthContainerImage .backdrop {
